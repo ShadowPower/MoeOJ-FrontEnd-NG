@@ -20,8 +20,14 @@
 
   <div class="uk-navbar-right uk-visible@m">
     <ul class="uk-navbar-nav">
-      <li class="uk-active"><a [routerLink]="">登录</a></li>
-      <li class="uk-active"><a [routerLink]="">注册</a></li>
+      <li class="uk-active" *ngFor="let page of navRight"><a [routerLink]=page.href>
+        <div>
+          {{page.caption}}
+          <div class="uk-navbar-subtitle">
+            {{page.subCaption}}
+          </div>
+        </div>
+      </a></li>
     </ul>
   </div>
 
@@ -35,8 +41,7 @@
               <a [routerLink]=page.href>{{ caption }}</a>
             </li>
             <li class="uk-nav-divider"></li>
-            <li class="uk-active"><a [routerLink]="">登录</a></li>
-            <li class="uk-active"><a [routerLink]="">注册</a></li>
+            <li class="uk-active" *ngFor="let page of navRight"><a [routerLink]=page.href>{{page.caption}}</a></li>
           </ul>
         </div>
       </li>
