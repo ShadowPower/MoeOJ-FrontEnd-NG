@@ -29,6 +29,7 @@ export class OjComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    document.title = "首页";
   }
 
 }
