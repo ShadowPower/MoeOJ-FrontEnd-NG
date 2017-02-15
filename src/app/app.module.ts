@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { OjComponent } from './oj/oj.component';
 
 import { AppRoutingModule } from './app-routing.module';
-import { NavbarComponent } from './oj/navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
