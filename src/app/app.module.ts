@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { OjComponent } from './oj/oj.component';
+import { IndexComponent } from './oj/index/index.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -14,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     OjComponent,
+    IndexComponent,
     NavbarComponent,
     FooterComponent
   ],

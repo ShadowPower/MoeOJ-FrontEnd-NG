@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 
 import { TestBed, async, inject } from '@angular/core/testing';
-import { OjService } from './oj.service';
+import { OjService } from '../oj.service';
 
 describe('OjService', () => {
   beforeEach(() => {
