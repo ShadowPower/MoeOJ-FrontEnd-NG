@@ -14,7 +14,6 @@ const NAVRIGHT: NavbarPageLink[] = [
 ];
 
 @Component({
-  moduleId: module.id,
   selector: 'app-navbar',
   templateUrl: 'navbar.component.html',
   styleUrls: ['navbar.component.css']

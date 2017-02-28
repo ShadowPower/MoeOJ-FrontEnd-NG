@@ -5,7 +5,6 @@ import { OjService } from './oj.service';
 import * as showdown from 'showdown';
 
 @Component({
-  moduleId: module.id,
   selector: 'app-oj',
   templateUrl: './oj.component.html',
   styleUrls: ['./oj.component.css'],

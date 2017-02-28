@@ -1,6 +1,6 @@
 import { MoeOJFrontEndNGPage } from './app.po';
 
-describe('moe-oj-front-end-ng App', function() {
+describe('moe-oj-front-end-ng App', () => {
   let page: MoeOJFrontEndNGPage;
 
   beforeEach(() => {
