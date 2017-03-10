@@ -1,0 +1,73 @@
+<div class="uk-container">
+  <div class="uk-grid uk-grid-small" uk-grid>
+    <div class="uk-width-4-5@m uk-width-1-1@s">
+      <div>
+        <div class="uk-card uk-card-default uk-card-small uk-card-body">
+          <img class="poster-girl" src="/assets/img/corner.png">
+          <div>
+            <div class="fix-float-bug">
+              <h2 class="uk-display-inline-block uk-margin-remove-bottom">题目列表</h2>
+              <div class="uk-align-right uk-margin-remove-bottom">
+
+              </div>
+            </div>
+            <div class="uk-overflow-auto">
+              <table class="uk-table uk-table-small">
+                <thead>
+                <tr>
+                  <th>#</th>
+                  <th>题目</th>
+                  <th>来源</th>
+                  <th>难度</th>
+                  <th>通过率</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let problem of problemList">
+                  <td>{{problem?.id}}</td>
+                  <td>{{problem?.title}}</td>
+                  <td>{{problem?.source}}</td>
+                  <td>{{problem?.difficulty}}</td>
+                  <td>{{(problem?.accepted/problem?.submit*100).toFixed(2)}}%</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="uk-width-1-5@m uk-width-1-1@s">
+      <div class="uk-grid uk-grid-small uk-child-width-1-1@l" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-small uk-card-body">
+            <h3 class="uk-panel-title">搜索</h3>
+            <form class="uk-form-horizontal">
+              <input class="uk-input uk-margin-small-bottom" id="form-h-text" type="text" placeholder="想找什么喵？">
+              <br />
+              <button class="uk-button uk-button-danger uk-width-1-1" type="submit">搜索</button>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-small uk-card-body">
+            <h3 class="uk-panel-title">排行</h3>
+            2jjy<br />
+            Chris<br />
+            BLumia<br />
+            ShadowPower<br />
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-small uk-card-body">
+            <h3 class="uk-panel-title">标签</h3>
+            排序<br />
+            查找<br />
+            二叉树<br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

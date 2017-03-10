@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { OjComponent } from './oj/oj.component';
@@ -10,6 +11,7 @@ import { IndexComponent } from './oj/index/index.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProblemsetComponent } from './oj/problemset/problemset.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     OjComponent,
     IndexComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ProblemsetComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,10 @@ import { FooterComponent } from './footer/footer.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
